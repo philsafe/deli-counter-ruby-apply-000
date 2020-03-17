@@ -16,11 +16,16 @@ end
 puts "The line is currently: #{take_a_number.join (" ")}"
 end
 end
+# def
+# take_a_number(katz_deli, name)
+# katz_deli<< (name)
+# puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+# end
 def
-take_a_number(katz_deli, name)
-katz_deli<< (name)
-puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
-end
+take_a_number(katz_deli,ticket_number)
+katz_deli<<(ticket_number)
+put "Welcome, You are number #{ticket_number} in line."
+end 
 def now_serving(next_cust)
   if next_cust.empty?
     puts "There is nobody waiting to be served!"
